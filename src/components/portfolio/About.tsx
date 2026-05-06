@@ -41,7 +41,7 @@ export const About = () => {
                 <div><span className="text-primary">$</span> cat focus.json</div>
                 <div className="pl-3 leading-relaxed">
                   <span className="text-muted-foreground">{"{"}</span><br />
-                  <span className="pl-3 text-foreground">"role"</span>: <span className="text-primary">"TI Mobile / Dev Web"</span>,<br />
+                  <span className="pl-3 text-foreground">"role"</span>: <span className="text-primary">"TI e Mobile / Dev Web"</span>,<br />
                   <span className="pl-3 text-foreground">"stack"</span>: [<span className="text-primary">"JS"</span>, <span className="text-primary">"Vue"</span>, <span className="text-primary">"Kotlin"</span>],<br />
                   <span className="pl-3 text-foreground">"mode"</span>: <span className="text-primary">"sempre aprendendo"</span><br />
                   <span className="text-muted-foreground">{"}"}</span>

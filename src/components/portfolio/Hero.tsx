@@ -49,7 +49,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-lg md:text-xl max-w-xl text-muted-foreground leading-relaxed"
           >
-            Estudante de <strong className="text-foreground">TI Mobile / Dev Web</strong> — explorando código, design e novas tecnologias para construir produtos digitais com propósito.
+            Estudante de <strong className="text-foreground">TI e Mobile / Dev Web</strong> — explorando código, design e novas tecnologias para construir produtos digitais com propósito.
           </motion.p>
 
           <motion.blockquote
