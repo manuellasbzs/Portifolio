@@ -1,0 +1,193 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   Manuella Zanola — Design System
+   Editorial, bold, magenta-driven. Personality + profissional.
+   All colors HSL.
+   ========================================================== */
+
+@layer base {
+  :root {
+    /* Surfaces */
+    --background: 32 50% 96%;          /* warm cream */
+    --foreground: 240 25% 10%;         /* deep ink */
+
+    --surface: 32 60% 98%;
+    --surface-elevated: 0 0% 100%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 25% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 25% 10%;
+
+    /* Brand — magenta/rose, vibrant but mature */
+    --primary: 335 82% 52%;
+    --primary-foreground: 32 60% 98%;
+    --primary-glow: 335 95% 68%;
+
+    --secondary: 240 25% 10%;
+    --secondary-foreground: 32 60% 98%;
+
+    --muted: 32 30% 92%;
+    --muted-foreground: 240 12% 38%;
+
+    --accent: 75 85% 55%;              /* electric lime accent */
+    --accent-foreground: 240 25% 10%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 15% 88%;
+    --input: 240 15% 88%;
+    --ring: 335 82% 52%;
+
+    --radius: 1.25rem;
+
+    /* Gradients & effects */
+    --gradient-hero: radial-gradient(ellipse at 20% 20%, hsl(335 90% 75% / 0.55), transparent 55%),
+                     radial-gradient(ellipse at 80% 30%, hsl(75 85% 65% / 0.35), transparent 50%),
+                     linear-gradient(180deg, hsl(32 60% 98%), hsl(32 50% 94%));
+    --gradient-magenta: linear-gradient(135deg, hsl(335 82% 52%), hsl(295 70% 55%));
+    --gradient-ink: linear-gradient(160deg, hsl(240 30% 12%), hsl(240 25% 6%));
+    --gradient-text: linear-gradient(135deg, hsl(335 82% 48%), hsl(295 70% 50%));
+
+    --shadow-soft: 0 10px 40px -10px hsl(335 60% 50% / 0.18);
+    --shadow-bold: 8px 8px 0px 0px hsl(240 25% 10%);
+    --shadow-bold-pink: 8px 8px 0px 0px hsl(335 82% 52%);
+    --shadow-bold-lime: 8px 8px 0px 0px hsl(75 85% 55%);
+    --shadow-glow: 0 0 80px hsl(335 95% 68% / 0.4);
+
+    --transition-smooth: cubic-bezier(0.22, 1, 0.36, 1);
+
+    /* Sidebar (unused but kept for shadcn) */
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 240 28% 7%;
+    --foreground: 32 50% 96%;
+
+    --surface: 240 25% 10%;
+    --surface-elevated: 240 22% 14%;
+
+    --card: 240 25% 10%;
+    --card-foreground: 32 50% 96%;
+
+    --popover: 240 25% 10%;
+    --popover-foreground: 32 50% 96%;
+
+    --primary: 335 95% 65%;
+    --primary-foreground: 240 28% 7%;
+    --primary-glow: 335 95% 75%;
+
+    --secondary: 32 50% 96%;
+    --secondary-foreground: 240 28% 7%;
+
+    --muted: 240 20% 14%;
+    --muted-foreground: 240 10% 65%;
+
+    --accent: 75 85% 60%;
+    --accent-foreground: 240 28% 7%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 240 18% 20%;
+    --input: 240 18% 20%;
+    --ring: 335 95% 65%;
+
+    --gradient-hero: radial-gradient(ellipse at 20% 20%, hsl(335 90% 55% / 0.45), transparent 55%),
+                     radial-gradient(ellipse at 80% 30%, hsl(295 60% 40% / 0.35), transparent 50%),
+                     linear-gradient(180deg, hsl(240 28% 7%), hsl(240 30% 5%));
+    --shadow-bold: 8px 8px 0px 0px hsl(335 95% 65%);
+    --shadow-bold-pink: 8px 8px 0px 0px hsl(75 85% 60%);
+    --shadow-bold-lime: 8px 8px 0px 0px hsl(335 95% 65%);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: 'Fraunces', serif;
+    font-optical-sizing: auto;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+@layer utilities {
+  .font-display { font-family: 'Fraunces', serif; }
+  .font-mono-disp { font-family: 'JetBrains Mono', monospace; }
+
+  .gradient-text {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .bg-hero { background: var(--gradient-hero); }
+  .bg-magenta { background: var(--gradient-magenta); }
+  .bg-ink { background: var(--gradient-ink); }
+
+  .shadow-bold { box-shadow: var(--shadow-bold); }
+  .shadow-bold-pink { box-shadow: var(--shadow-bold-pink); }
+  .shadow-bold-lime { box-shadow: var(--shadow-bold-lime); }
+  .shadow-soft { box-shadow: var(--shadow-soft); }
+  .shadow-glow { box-shadow: var(--shadow-glow); }
+
+  .transition-smooth { transition: all 0.5s var(--transition-smooth); }
+
+  /* Marquee */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  /* Floating blob */
+  @keyframes float-slow {
+    0%, 100% { transform: translate(0,0) rotate(0); }
+    33% { transform: translate(20px,-30px) rotate(8deg); }
+    66% { transform: translate(-15px,20px) rotate(-5deg); }
+  }
+  .animate-float { animation: float-slow 12s ease-in-out infinite; }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(var(--foreground) / 0.06) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--foreground) / 0.06) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+}

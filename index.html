@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manuella Zanola — Portfólio | UI/UX & Dev</title>
+    <meta name="description" content="Portfólio de Manuella Zanola, estudante de Informática apaixonada por UI/UX Design e desenvolvimento. Projetos, habilidades e contato." />
+    <meta name="author" content="Manuella Sofia Braga Zanola Souza" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,800;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <meta property="og:title" content="Manuella Zanola — Portfólio UI/UX & Dev" />
+    <meta property="og:description" content="Estudante de Informática focada em UI/UX Design. Conheça meus projetos." />
+    <meta property="og:type" content="website" />
+  </head>
+
+  <body>
+    <script>
+      // GitHub Pages SPA redirect — reads the encoded path from 404.html and restores it.
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
