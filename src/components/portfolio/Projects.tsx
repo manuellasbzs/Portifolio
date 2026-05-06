@@ -4,19 +4,11 @@ import { ArrowUpRight } from "lucide-react";
 const projects = [
   {
     n: "01",
-    title: "Meu Portfólio (v1)",
-    tag: "HTML · CSS · JS · Figma",
-    desc: "Primeira versão do portfólio: prototipação no Figma, design responsivo e alternância entre modo claro e escuro para uma melhor experiência do usuário.",
-    href: "https://manuellasbzs.github.io/Portfolio/",
-    color: "bg-primary text-primary-foreground",
-  },
-  {
-    n: "02",
     title: "Reprodução de Site",
     tag: "HTML · CSS · UI",
     desc: "Reprodução fiel do layout de um site existente, aplicando boas práticas de estrutura semântica, responsividade e organização visual.",
     href: "https://manuellasbzs.github.io/Clone-de-Interface/",
-    color: "bg-accent text-accent-foreground",
+    color: "bg-primary text-primary-foreground",
   },
 ];
 

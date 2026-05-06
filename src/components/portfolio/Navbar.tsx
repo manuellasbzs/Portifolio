@@ -61,7 +61,7 @@ export const Navbar = () => {
 
         <div className="flex items-center gap-2">
           <a
-            href="https://docs.google.com/document/d/1nzG3UuV8TdZldvHqHtRqz_61WAUyV5vPlrkNbyD6Y6Y/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1pN-ABGSXhvB8OzyEBdDh7Cev23F5O5xL/view?usp=sharing"
             target="_blank"
             rel="noreferrer"
             className="hidden sm:inline-flex items-center gap-2 bg-foreground text-background px-4 py-2 rounded-full text-sm font-semibold hover:bg-primary hover:text-primary-foreground transition-smooth"
