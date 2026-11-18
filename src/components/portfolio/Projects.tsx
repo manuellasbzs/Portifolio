@@ -10,6 +10,22 @@ const projects = [
     href: "https://manuellasbzs.github.io/Clone-de-Interface/",
     color: "bg-primary text-primary-foreground",
   },
+  {
+    n: "02",
+    title: "NextStock",
+    tag: "Flutter · Python · IA",
+    desc: "Sistema de gestão de estoque desenvolvido como projeto de conclusão do curso técnico, com integração à API de inteligência artificial Gemini para oferecer um assistente virtual por chatbot.",
+    href: "https://github.com/iannini25/NextStock",
+    color: "bg-primary text-primary-foreground",
+  },
+  {
+    n: "03",
+    title: "Atividade Final Android",
+    tag: "Kotlin · Android · API",
+    desc: "Aplicativo Android desenvolvido em Kotlin, com integração a uma API externa para consulta e apresentação dinâmica de dados.",
+    href: "https://github.com/renanmulinarixz/Atividade-Final---Android",
+    color: "bg-primary text-primary-foreground",
+  },
 ];
 
 export const Projects = () => {
