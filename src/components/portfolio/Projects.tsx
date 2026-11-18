@@ -20,7 +20,7 @@ const projects = [
   },
   {
     n: "03",
-    title: "Atividade Final Android",
+    title: "API Android",
     tag: "Kotlin · Android · API",
     desc: "Aplicativo Android desenvolvido em Kotlin, com integração a uma API externa para consulta e apresentação dinâmica de dados.",
     href: "https://github.com/renanmulinarixz/Atividade-Final---Android",
