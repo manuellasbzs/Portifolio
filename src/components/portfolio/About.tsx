@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Terminal, Sparkles, Heart, Code2 } from "lucide-react";
 
 const stats = [
-  { k: "17", v: "Anos" },
+  { k: "18", v: "Anos" },
   { k: "3º", v: "Ano técnico" },
   { k: "C1", v: "Inglês" },
   { k: "2026", v: "Conclusão" },
@@ -98,7 +98,7 @@ export const About = () => {
 
           <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
             <p>
-              Meu nome é <strong className="text-foreground">Manuella Sofia Braga Zanola Souza</strong>, tenho 17 anos e sou estudante do curso técnico em Informática no <strong className="text-foreground">Colégio e Faculdade Cotemig</strong> (unidade Barroca).
+              Meu nome é <strong className="text-foreground">Manuella Sofia Braga Zanola Souza</strong>, tenho 18 anos e sou estudante do curso técnico em Informática no <strong className="text-foreground">Colégio e Faculdade Cotemig</strong> (unidade Barroca).
             </p>
             <p>
               Tenho grande interesse pela área de <strong className="text-foreground">Tecnologia da Informação</strong>, com foco em <strong className="text-foreground">desenvolvimento web</strong> e <strong className="text-foreground">mobile</strong>. Gosto de explorar diferentes linguagens, frameworks e ferramentas, sempre buscando aplicar boas práticas e contribuir com soluções criativas, funcionais e bem desenhadas.

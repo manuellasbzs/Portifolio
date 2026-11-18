@@ -102,7 +102,7 @@ export const Hero = () => {
             className="absolute -right-4 bottom-16 bg-surface-elevated rounded-2xl px-4 py-3 border-2 border-foreground shadow-bold-lime"
           >
             <div className="font-mono-disp text-[10px] uppercase text-muted-foreground">Idade</div>
-            <div className="font-display font-bold">17 anos</div>
+            <div className="font-display font-bold">18 anos</div>
           </motion.div>
         </motion.div>
       </div>
